@@ -1,0 +1,42 @@
+{
+  "name": "unicial-landing-page",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start -p 6000",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@farbenmeer/react-spring-slider": "^1.5.2",
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.60",
+    "@material-ui/styles": "^4.11.4",
+    "@reduxjs/toolkit": "^1.7.2",
+    "@types/react-animate-on-scroll": "^2.1.5",
+    "animate.css": "^4.1.1",
+    "axios": "^0.27.2",
+    "clsx": "^1.1.1",
+    "i18next": "^21.6.12",
+    "next": "12.1.0",
+    "next-seo": "^5.1.0",
+    "react": "17.0.2",
+    "react-animate-on-scroll": "^2.1.5",
+    "react-dom": "17.0.2",
+    "react-i18next": "^11.15.5",
+    "react-redux": "^7.2.6",
+    "react-router-dom": "^6.2.1",
+    "react-scroll": "^1.8.5",
+    "redux": "^4.1.2",
+    "redux-thunk": "^2.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "17.0.21",
+    "@types/react": "17.0.39",
+    "eslint": "8.9.0",
+    "eslint-config-next": "12.1.0",
+    "typescript": "4.5.5"
+  }
+}

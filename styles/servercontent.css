@@ -1,0 +1,83 @@
+.c-server-root {
+  background-image: url("/images/server.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.c-server-container {
+  max-width: 1064px;
+  margin: 20px auto 100px auto;
+}
+
+.c-server-content {
+  display: flex;
+  justify-content: space-between;
+}
+.c-server-inner-content {
+  width: 45%;
+  align-self: self-end;
+  margin-bottom: 100px;
+}
+
+.c-server-descriptions {
+  margin-top: 50px;
+}
+.c-server-description {
+  font-family: Lato;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #37474F;
+  width: 310px;
+}
+.c-server-button{
+  margin-top: 30px;
+  height: 40px;
+  width: 150px;
+}
+
+.c-server-right {
+  width: 55%;
+}
+
+.c-server-map {
+  width: 800px;
+  height: 600px;
+}
+
+.c-server-bottom {
+  text-align: center;
+  width: 100%;
+}
+
+@media (max-width: 1120px) {
+  .c-server-container {
+    margin: 150px 20px 100px 20px;
+  }
+  .c-server-content {
+    display: grid;
+  }
+  .c-server-inner-content {
+    width: 100%;
+  }
+  .c-server-right {
+    width: 100%;
+  }
+  .c-server-map {
+    width: 100%;
+  }
+}
+
+@media (max-width: 530px) {
+  .c-server-map {
+    width: 100%;
+    margin-top: 20px;
+    height: 300px;
+  }
+  .c-server-description {
+    width: 100%;
+  }
+}

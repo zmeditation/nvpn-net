@@ -1,0 +1,92 @@
+.c-actionbutton-lightcolor {
+  cursor: pointer;
+  max-width: 200px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  text-transform: none;
+  grid-gap: 8px;
+  gap: 8px;
+  justify-content: center;
+  height: 56px;
+  background: linear-gradient(90deg, rgba(186, 89, 9, 0.8) 11.9%, rgba(255, 116, 0, 0.8) 117.99%);
+  box-shadow: 4px 4px 0px rgba(255, 138, 0, 0.4);
+  border-radius: 32px;
+}
+.c-horizonbutton-lightcolor {
+  cursor: pointer;
+  width: 98px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  text-transform: none;
+  grid-gap: 8px;
+  gap: 8px;
+  justify-content: center;
+  height: 56px;
+  background: linear-gradient(90deg, rgba(186, 89, 9, 0.8) 11.9%, rgba(255, 116, 0, 0.8) 117.99%);
+  box-shadow: 4px 4px 0px rgba(255, 138, 0, 0.4);
+  border-radius: 32px;
+}
+.c-actionbutton-lightcolor:hover {
+  background: linear-gradient(90deg, #ffb03a 20%, #ff7c4c 101.82%);
+}
+.c-horizonbutton-lightcolor:hover {
+  background: linear-gradient(90deg, #ffb03a 20%, #ff7c4c 101.82%);
+}
+.c-actionbutton-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19.2px;
+  color: #ffffff;
+}
+.c-actionbutton-icon {
+  width: 20px;
+  height: 20px;
+  color: white;
+}
+.c-circlebutton-root {
+  min-height: 50px;
+  max-width: 50px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+.c-circlebutton-root.light {
+  background: linear-gradient(90deg, #ff7c4c 20%, #ffb03a 101.82%);
+}
+.c-circlebutton-root.dark {
+  background: linear-gradient(90.07deg, #7f64e2 3.5%, #41a6ef 97.01%);
+}
+.c-circlebutton-text {
+  color: white;
+}
+.c-title-root.dark {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 60px;
+  letter-spacing: 0.02em;
+  color: #52453B;
+}
+.c-title-root.light {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+  letter-spacing: 0.02em;
+  color: #37474F;
+}
+
+@media (max-width: 760px) {
+  .c-title-root {
+    font-size: 30px;
+  }
+}
