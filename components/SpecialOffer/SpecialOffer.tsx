@@ -37,17 +37,17 @@ const SpecialOffer = () => {
   const { t } = useTranslation();
   return (
     <div className="c-offer-root">
-          <div className="c-offer-title-content">
-            <Title
-              description={t("Special offer")}
-              color="light"
-            />
-          </div>
-        <div className="c-offer-cardlist">
-          {items.map((item, index)=>(
-              <OfferCarditem item={item} key={index}/>
-          ))}
-        </div>
+      <div className="c-offer-title-content">
+        <Title
+          description={t("Special offer")}
+          color="light"
+        />
+      </div>
+      <div className="c-offer-cardlist">
+        {items.map((item, index)=>(
+            <OfferCarditem item={item} key={index}/>
+        ))}
+      </div>
     </div>
   );
 };

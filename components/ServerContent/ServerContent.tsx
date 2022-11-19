@@ -8,16 +8,16 @@ const ServerContent = () => {
     window.open(url);
   };
   return (
-    <div className="c-server-root">
+    <div className="c-server-root wrapper">
+      <canvas id="bg-animation"></canvas>
       <div className="c-server-container">
         <div className="c-server-content">
           <div className="c-server-inner-content">
             <div className="c-server-left">
-             
-                <Title
-                  description={t("Servers in 23 Countries Worldwide")}
-                  color="light"
-                />
+              <Title
+                description={t("Servers in 23 Countries Worldwide")}
+                color="light"
+              />
               <div className="c-server-descriptionroot">
                 <div
                   className="c-server-descriptions"

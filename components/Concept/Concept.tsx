@@ -5,6 +5,7 @@ const Concept = () => {
   const { t } = useTranslation();
   return (
     <div className="c-concept-root">
+      <canvas id="canvas" className="c-canvas-root"></canvas>
       <div className="c-concept-container">
         <div className="c-concept-title-content">
           <Title description="Why nVpn?" color="dark"/>

@@ -20,6 +20,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  max-width: 1064px;
+  margin: 0px auto 100px auto;
+  padding: 0px 10px;
 }
 
 .c-events-carditem {

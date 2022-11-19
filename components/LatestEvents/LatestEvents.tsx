@@ -26,21 +26,18 @@ const LatestEvents = () => {
   return (
     <div className="c-events-root">
       <div className="c-events-container">
-        <div
-          >
-            <div className="c-events-title-content">
-              <Title
-                description={t("Latest events")}
-                color="light"
-              />
-              <img src="/images/latestevents-logo.png" className="c-events-title-logo"></img>
-            </div>
-          </div>
-          <div className="c-events-cardlist">
-            {items.map((item, index)=>(
-                <EventCard item={item} key={index}/>
-            ))}
-          </div>
+        <div className="c-events-title-content">
+          <Title
+            description={t("Latest events")}
+            color="light"
+          />
+          <img src="/images/latestevents-logo.png" className="c-events-title-logo"></img>
+        </div>
+      </div>
+      <div className="c-events-cardlist">
+        {items.map((item, index)=>(
+            <EventCard item={item} key={index}/>
+        ))}
       </div>
     </div>
   );

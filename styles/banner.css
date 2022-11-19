@@ -44,6 +44,8 @@
 
 .c-banner-button {
   margin-top: 40px;
+  position: relative;
+  z-index: 3;
 }
 
 .c-slider-stepper-root {

@@ -23,10 +23,7 @@ export default class MyDocument extends Document {
             type="text/css"
             media="all"
           />
-          {/* <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-          /> */}
+          <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet"></link>
           <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
@@ -35,6 +32,12 @@ export default class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
+          <script src="/js/custom.js" type="text/javascript" />
+          <script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js?ver=1.9.1'></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenLite.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/easing/EasePack.min.js"></script>
+          <script type='text/javascript' src='resources/scripts/bg-animation.js'></script>
+          <script src="/js/animationCursor.js" type="text/javascript" />
         </body>
       </Html>
     );

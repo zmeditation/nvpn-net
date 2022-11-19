@@ -9,6 +9,7 @@ import "../styles/servercontent.css";
 import "../styles/specialoffer.css";
 import "../styles/latestevents.css";
 import "../styles/alert.css";
+import "../styles/style.css";
 import type { AppProps } from "next/app";
 import { NextSeo } from "next-seo";
 import SEO from "../next-seo.config";
