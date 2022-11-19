@@ -57,29 +57,29 @@
   -moz-animation: translateImg 7s 1; 
   -webkit-animation: translateImg 7s 1; 
   -o-animation: translateImg 7s 1; 
-  animation: translateImg 3s infinite;
+  animation: translateImg 2s infinite;
   animation-direction: alternate;
 }
 
 /* Animation Keyframes*/
 @keyframes translateImg {
   0% { transform: translate(0, 0); }
-  100% { transform: translate(0, 20px); }
+  100% { transform: translate(0, 30px); }
 }
 
 @-moz-keyframes translateImg {
   0% { transform: translate(0, 0); }
-  100% { transform: translate(0, 20px); }
+  100% { transform: translate(0, 30px); }
 }
 
 @-webkit-keyframes translateImg {
   0% { transform: translate(0, 0); }
-  100% { transform: translate(0, 20px); }
+  100% { transform: translate(0, 30px); }
 }
 
 @-o-keyframes translateImg {
   0% { transform: translate(0, 0); }
-  100% { transform: translate(0, 20px); }
+  100% { transform: translate(0, 30px); }
 }
 
 @media (max-width: 1120px) {
