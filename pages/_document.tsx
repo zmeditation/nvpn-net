@@ -32,12 +32,12 @@ export default class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
-          <script src="/js/custom.js" type="text/javascript" />
-          <script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js?ver=1.9.1'></script>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenLite.min.js"></script>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/easing/EasePack.min.js"></script>
-          <script type='text/javascript' src='resources/scripts/bg-animation.js'></script>
-          <script src="/js/animationCursor.js" type="text/javascript" />
+          <script src="/js/custom.js" type="text/javascript" async/>
+          <script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js?ver=1.9.1' async></script> 
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenLite.min.js" async></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/easing/EasePack.min.js" async></script>
+          <script type='text/javascript' src='resources/scripts/bg-animation.js' async></script>
+          <script src="/js/animationCursor.js" type="text/javascript" async/>
         </body>
       </Html>
     );

@@ -9,7 +9,6 @@ const ServerContent = () => {
   };
   return (
     <div className="c-server-root wrapper">
-      <canvas id="bg-animation"></canvas>
       <div className="c-server-container">
         <div className="c-server-content">
           <div className="c-server-inner-content">
