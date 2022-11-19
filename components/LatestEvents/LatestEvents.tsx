@@ -1,6 +1,5 @@
 import { useTranslation } from "react-i18next";
 import Title from "../Base/Title/Title";
-import ScrollAnimation from "react-animate-on-scroll";
 import EventCard from "./EventCard";
 
 const items = [
@@ -27,12 +26,7 @@ const LatestEvents = () => {
   return (
     <div className="c-events-root">
       <div className="c-events-container">
-        <ScrollAnimation
-            animateIn="zoomIn"
-            animateOut="fadeOut"
-            duration={0.5}
-            delay={0}
-            animateOnce={true}
+        <div
           >
             <div className="c-events-title-content">
               <Title
@@ -41,19 +35,10 @@ const LatestEvents = () => {
               />
               <img src="/images/latestevents-logo.png" className="c-events-title-logo"></img>
             </div>
-          </ScrollAnimation>
+          </div>
           <div className="c-events-cardlist">
             {items.map((item, index)=>(
-              <ScrollAnimation
-                animateIn="zoomIn"
-                animateOut="fadeOut"
-                duration={0.5}
-                delay={0}
-                animateOnce={true}
-                key={index}
-              >
-                <EventCard item={item}/>
-              </ScrollAnimation>
+                <EventCard item={item} key={index}/>
             ))}
           </div>
       </div>

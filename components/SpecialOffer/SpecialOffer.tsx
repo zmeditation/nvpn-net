@@ -1,6 +1,5 @@
 import { useTranslation } from "react-i18next";
 import Title from "../Base/Title/Title";
-import ScrollAnimation from "react-animate-on-scroll";
 import OfferCarditem from "./OfferCardItem";
 
 const items = [
@@ -38,32 +37,15 @@ const SpecialOffer = () => {
   const { t } = useTranslation();
   return (
     <div className="c-offer-root">
-       <ScrollAnimation
-          animateIn="zoomIn"
-          animateOut="fadeOut"
-          duration={0.5}
-          delay={0}
-          animateOnce={true}
-        >
           <div className="c-offer-title-content">
             <Title
               description={t("Special offer")}
               color="light"
             />
           </div>
-        </ScrollAnimation>
         <div className="c-offer-cardlist">
           {items.map((item, index)=>(
-            <ScrollAnimation
-              animateIn="zoomIn"
-              animateOut="fadeOut"
-              duration={0.5}
-              delay={0}
-              animateOnce={true}
-              key={index}
-            >
               <OfferCarditem item={item}/>
-            </ScrollAnimation>
           ))}
         </div>
     </div>
