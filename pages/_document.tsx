@@ -18,7 +18,6 @@ export default class MyDocument extends Document {
             rel="stylesheet"
           ></link>
           <link
-            rel="stylesheet"
             id="ct-google-fonts-css"
             href="//fonts.googleapis.com/css?family=Montserrat%3A500%2Cregular%2C300%2C700%2C200%7COpen+Sans%3A300%2C700&#038;subset=latin%2Clatin-ext%2Cvietnamese%2Ccyrillic-ext%2Ccyrillic%2Cgreek%2Cgreek-ext&#038;ver=4.9.8"
             type="text/css"

@@ -45,7 +45,7 @@ const SpecialOffer = () => {
           </div>
         <div className="c-offer-cardlist">
           {items.map((item, index)=>(
-              <OfferCarditem item={item}/>
+              <OfferCarditem item={item} key={index}/>
           ))}
         </div>
     </div>
