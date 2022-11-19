@@ -1,24 +1,6 @@
 import Title from "../Base/Title/Title";
 import { useTranslation } from "react-i18next";
 import ActionButton from "../Base/ActionButton/ActionButton";
-import { useSpring, animated } from "react-spring";
-
-const AnimImage = () => {
-  const animation = useSpring({
-    from: {
-      transform: 'translateY(0px)',
-    },
-    to: async next => {
-      while (true) {
-        await next({ transform: 'translateY(-10px)'});
-        await next({ ransform: 'translateY(0px)'});
-      }
-    }
-  });
-  return (
-    <animated.img className="c-server-bottom-img" src="/images/server-bottom.png" style={animation}></animated.img>
-  )
-}
 
 const ServerContent = () => {
   const { t } = useTranslation();
@@ -58,7 +40,7 @@ const ServerContent = () => {
           </div>
         </div>
         <div className="c-server-bottom">
-          <AnimImage />
+          <img src="/images/server-bottom.png" className="c-server-bottom-img"></img>
         </div>
       </div>
     </div>

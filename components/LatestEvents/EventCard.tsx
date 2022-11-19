@@ -7,7 +7,11 @@ const EventCard = (props: any) => {
     <div className="c-events-carditem">
       <img src="/images/events-card-back.png" className="c-events-card-background"></img>
       <div className="c-events-card-content">
-        <img src="/images/events-card-logo.png" className="c-events-card-header-img"></img>
+        <div className="c-events-card-header-img">
+          <img src="/images/arrow.png"></img>
+          <img src="/images/arrow.png"></img>
+          <img src="/images/arrow.png"></img>
+        </div>
         <div className="c-events-card-subtitle">{item?.desc}</div>
         <div className="c-events-card-date">{item?.date}</div>
       </div>

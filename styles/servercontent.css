@@ -53,6 +53,35 @@
   width: 100%;
 }
 
+.c-server-bottom-img {
+  -moz-animation: translateImg 7s 1; 
+  -webkit-animation: translateImg 7s 1; 
+  -o-animation: translateImg 7s 1; 
+  animation: translateImg 3s infinite;
+  animation-direction: alternate;
+}
+
+/* Animation Keyframes*/
+@keyframes translateImg {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(0, 20px); }
+}
+
+@-moz-keyframes translateImg {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(0, 20px); }
+}
+
+@-webkit-keyframes translateImg {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(0, 20px); }
+}
+
+@-o-keyframes translateImg {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(0, 20px); }
+}
+
 @media (max-width: 1120px) {
   .c-server-container {
     margin: 150px 20px 100px 20px;

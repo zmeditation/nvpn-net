@@ -65,28 +65,28 @@ const Header = () => {
               disableRipple
               onClick={() => window.location.reload()}
             >
-              <span>{t("Home")}</span>
+              <span className="c-header-nav-text">{t("Home")}</span>
             </Button>
             <Button
               className="c-header-nav"
               disableRipple
               onClick={() => handleUrl("/#")}
             >
-              <span>{t("Pricing")}</span>
+              <span className="c-header-nav-text">{t("Pricing")}</span>
             </Button>
             <Button
               className="c-header-nav"
               disableRipple
               onClick={() => handleUrl("/#")}
             >
-              <span>{t("F.A.Q")}</span>
+              <span className="c-header-nav-text">{t("F.A.Q")}</span>
             </Button>
             <Button
               className="c-header-nav"
               disableRipple
               onClick={() => handleUrl("/#")}
             >
-              <span>{t("Contac Us")}</span>
+              <span className="c-header-nav-text">{t("Contac Us")}</span>
             </Button>
           </div>
           <HeaderMobileMenu />
