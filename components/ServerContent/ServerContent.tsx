@@ -8,7 +8,8 @@ const ServerContent = () => {
     window.open(url);
   };
   return (
-    <div className="c-server-root wrapper">
+    <div className="c-server-root">
+      <canvas id="canvas" className="c-canvas-root"></canvas>
       <div className="c-server-container">
         <div className="c-server-content">
           <div className="c-server-inner-content">

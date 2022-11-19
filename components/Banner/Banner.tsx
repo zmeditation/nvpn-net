@@ -18,7 +18,6 @@ const Banner = () => {
 
   return (
     <div className="c-banner-root">
-      <canvas id="bg-animation"></canvas>
       <ol className="c-banner-slide-container">
         <div
           className={clsx("c-banner-slider-child", "c-banner-slide active")}
