@@ -18,7 +18,7 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>{t("Welcome To Unicial")}</title>
+        <title>{t("Welcome To nVpn")}</title>
         <link rel="icon" href="/logo.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com"></link>
         <link
