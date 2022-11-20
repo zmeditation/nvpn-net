@@ -37,7 +37,12 @@ const ServerContent = () => {
           <div
             className="c-server-right"
           >
-            <img src="/images/server-map.png" className="c-server-map"></img>
+            <img src="/images/server-map.png" className="c-server-map" useMap="#map"></img>
+            <map name="map">
+              <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm"></area>
+              <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm"/>
+              <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm"/>
+            </map>
           </div>
         </div>
         <div className="c-server-bottom">

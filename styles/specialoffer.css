@@ -19,7 +19,15 @@
   width: 35%;
   min-width: 350px;
   height: 500px;
-  margin-top: 30px
+  margin-top: 30px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.c-offer-carditem:hover{
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1)
 }
 
 .c-offer-card-background {
