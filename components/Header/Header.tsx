@@ -86,7 +86,7 @@ const Header = () => {
               disableRipple
               onClick={() => handleUrl("/#")}
             >
-              <span className="c-header-nav-text">{t("Contac Us")}</span>
+              <span className="c-header-nav-text">{t("Contact Us")}</span>
             </Button>
           </div>
           <HeaderMobileMenu />

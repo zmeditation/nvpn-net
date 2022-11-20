@@ -37,6 +37,7 @@
   margin-top: 30px;
   height: 40px;
   width: 150px;
+  position: relative;
 }
 
 .c-server-right {
