@@ -56,13 +56,13 @@ export default {
   additionalLinkTags: [
     {
       rel: "apple-touch-icon",
-      href: "/logo.svg",
+      href: "/logo.png",
       sizes: "180x180",
-    },
-    {
-      rel: "shortcut icon",
-      href: "icons/favicon.ico",
-    },
+    }
+    // {
+    //   rel: "shortcut icon",
+    //   href: "icons/favicon.ico",
+    // },
   ],
   robotsProps: {
     noarchive: true,

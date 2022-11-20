@@ -103,6 +103,15 @@
   opacity: 1;
 }
 
+.c-banner-video {
+  mix-blend-mode: lighten;
+  position: absolute;
+  bottom: 50%;
+  right: 10%;
+  width: 500px;
+  transform: translate(0%, 50%);
+}
+
 @media (max-width: 1600px) {
   .c-banner-root .c-banner-slide-container {
     height: 800px !important;
@@ -171,5 +180,9 @@
   }
   .c-slider-stepper-root {
     right: 30px;
+  }
+  .c-banner-video {
+    width: 100%;
+    right: 0%;
   }
 }

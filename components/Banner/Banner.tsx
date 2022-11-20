@@ -10,12 +10,13 @@ const Banner = () => {
   };
   const item =
     {
-      image: "/images/banner.png",
+      image: "/images/banner_.png",
       title: t("nVpn"),
       description: t("The VPN service that provides a secure and private connection within a public network for your phone, tablet & desktop secure & private"),
       button: t("Order Now"),
     }
-
+  const playing = true
+  const loop = true
   return (
     <div className="c-banner-root">
       <ol className="c-banner-slide-container">
@@ -47,6 +48,11 @@ const Banner = () => {
               />
             </div>
           </div>
+          <video autoPlay loop muted className="c-banner-video">
+            {/* <source src={`${BackendUploadURL}/advertise/zilionixxapp.mp4`} type="video/mp4" /> */}
+            <source src="/images/banner.mp4" type="video/ogg" />
+            {/* <source src="/images/zilionixxapp.mp4" type="video/mp4" /> */}
+          </video>
         </div>
       </ol>
     </div>
