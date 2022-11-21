@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 import ActionButton from "../Base/ActionButton/ActionButton";
 
 const OfferCarditem = (props: any) => {
-  const {item} = props
+  const { item, annualState } = props
   const { t } = useTranslation();
   const handleUrl = (url: string) => {
     window.open(url);
@@ -17,7 +17,11 @@ const OfferCarditem = (props: any) => {
         <div className="c-offer-card-subtitle">{item.subTitle}</div>
         <div className="c-offer-card-pricecontent">
           <span className="c-offer-card-dollar">$</span>
-          <span className="c-offer-card-price">{item.price}</span>
+          {annualState ?
+          <span className="c-offer-card-price">{item.annualPrice}</span>
+          :
+          <span className="c-offer-card-price">{item.monthPrice}</span>
+          }
         </div>
         <ActionButton
           letter="Order Now"
