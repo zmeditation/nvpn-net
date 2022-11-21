@@ -59,59 +59,61 @@ const Header = () => {
   });
 
   return (
-    <div className={`c-header-root${sticky ? " sticky" : ""}`}>
-      <Box className={`c-header-container`}>
-        <div className="c-header-menu-group">
-          <div className="c-header-menu">
-            <div className="c-header-logo">
-              <img
-                src="/logo.png"
-                className="c-header-logo-img"
-                alt="logo"
-              ></img>
-              <span className="c-header-logo-name">{t("nVpn")}</span>
+    <>
+      <div className={`c-header-root${sticky ? " sticky" : ""}`}>
+        <Box className={`c-header-container`}>
+          <div className="c-header-menu-group">
+            <div className="c-header-menu">
+              <div className="c-header-logo">
+                <img
+                  src="/logo.png"
+                  className="c-header-logo-img"
+                  alt="logo"
+                ></img>
+                <span className="c-header-logo-name">{t("nVpn")}</span>
+              </div>
+              <Button
+                className="c-header-nav c-header-nav-active"
+                disableRipple
+                onClick={() => window.location.reload()}
+              >
+                <span className="c-header-nav-text">{t("Home")}</span>
+              </Button>
+              <Button
+                className="c-header-nav"
+                disableRipple
+                onClick={() => handleUrl("/#")}
+              >
+                <span className="c-header-nav-text">{t("Pricing")}</span>
+              </Button>
+              <Button
+                className="c-header-nav"
+                disableRipple
+                onClick={() => handleUrl("/#")}
+              >
+                <span className="c-header-nav-text">{t("F.A.Q")}</span>
+              </Button>
+              <Button
+                className="c-header-nav"
+                disableRipple
+                onClick={() => handleUrl("/#")}
+              >
+                <span className="c-header-nav-text">{t("Contact Us")}</span>
+              </Button>
             </div>
-            <Button
-              className="c-header-nav c-header-nav-active"
-              disableRipple
-              onClick={() => window.location.reload()}
-            >
-              <span className="c-header-nav-text">{t("Home")}</span>
-            </Button>
-            <Button
-              className="c-header-nav"
-              disableRipple
-              onClick={() => handleUrl("/#")}
-            >
-              <span className="c-header-nav-text">{t("Pricing")}</span>
-            </Button>
-            <Button
-              className="c-header-nav"
-              disableRipple
-              onClick={() => handleUrl("/#")}
-            >
-              <span className="c-header-nav-text">{t("F.A.Q")}</span>
-            </Button>
-            <Button
-              className="c-header-nav"
-              disableRipple
-              onClick={() => handleUrl("/#")}
-            >
-              <span className="c-header-nav-text">{t("Contact Us")}</span>
-            </Button>
+            <HeaderMobileMenu />
+            {/* <LanguageChange /> */}
           </div>
-          <HeaderMobileMenu />
-          {/* <LanguageChange /> */}
-        </div>
-        <ActionButton
-          letter="Login"
-          className="c-header-login-button"
-          onClick={() => handleUrl("/#")}
-        />
-      </Box>
+          <ActionButton
+            letter="Login"
+            className="c-header-login-button"
+            onClick={() => handleUrl("/#")}
+          />
+        </Box>
+      </div>
       <div id="back-to-top-anchor" />
       <ScrollTop scrolltotop={scrolltotop} />
-    </div>
+    </>
   );
 };
 
