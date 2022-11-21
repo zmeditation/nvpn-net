@@ -12,8 +12,8 @@ const OfferCarditem = (props: any) => {
     <div className="c-offer-carditem">
       <img src={item.backImg} className="c-offer-card-background"></img>
       <div className="c-offer-card-content">
-        <img src={item.headerImg} className="c-offer-card-header-img"></img>
         <div className="c-offer-card-title">{item.title}</div>
+        <img src={item.headerImg} className="c-offer-card-header-img"></img>
         <div className="c-offer-card-subtitle">{item.subTitle}</div>
         <div className="c-offer-card-pricecontent">
           <span className="c-offer-card-dollar">$</span>

@@ -24,7 +24,7 @@ export default class MyDocument extends Document {
           type="text/css"
           media="all"
         />
-          <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet"></link>
+          {/* <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet"></link> */}
           <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"

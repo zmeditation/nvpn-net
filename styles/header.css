@@ -169,7 +169,7 @@
 .c-scroll-top {
   opacity: 0.5;
   position: fixed;
-  right: 50px;
+  left: 50px;
   bottom: 50px;
   z-index: 1000;
   -webkit-transition: all 0.3s linear;
