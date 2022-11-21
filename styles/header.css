@@ -19,33 +19,36 @@
   margin-top: 22px;
   z-index: 100;
   text-align: center;
+  background: white;
+  padding: 10px;
 }
 
 .c-header-container {
   max-width: 1200px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   margin: 0px auto;
 }
 
-/* .c-header-root.sticky {
+.c-header-root.sticky {
   position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
-  border-bottom: 1px solid #282e4e;
   width: 100%;
-  background: rgba(255, 255, 255, 0.39);
   opacity: 0;
-  animation: fade ease-in-out 5s;
+  animation: fade ease-in-out 3s;
   animation-fill-mode: forwards;
-} */
+  background: white;
+  padding: 10px;
+}
 
 .c-header-menu-group {
   height: 64px;
   padding: 0px 70px;
   /* max-width: 1064px; */
-  background: rgba(255, 255, 255, 0.39);
+  background: #7f90a4;
   border-radius: 50px;
 }
 

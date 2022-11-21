@@ -31,6 +31,7 @@ function ScrollTop({ scrolltotop }: Props) {
 const Header = () => {
   const { t } = useTranslation();
   const [scrolltotop, setScrolltotop] = useState(false);
+  const [sticky, setSticky] = useState(false);
 
   const handleUrl = (url: string) => {
     window.open(url);
@@ -38,17 +39,27 @@ const Header = () => {
   const handleScroll = () => {
     if (window.scrollY > 65) {
       setScrolltotop(true);
+      window.innerWidth <= 768 ? setSticky(false) : setSticky(true);
     } else if (window.scrollY < 90) {
+      setSticky(false);
       setScrolltotop(false);
+    }
+  };
+
+  const handleResize = () => {
+    if (window.innerWidth <= 768) {
+      setSticky(false);
+    } else {
     }
   };
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleResize);
   });
 
   return (
-    <div className="c-header-root">
+    <div className={`c-header-root${sticky ? " sticky" : ""}`}>
       <Box className={`c-header-container`}>
         <div className="c-header-menu-group">
           <div className="c-header-menu">
